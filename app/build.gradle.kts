@@ -75,9 +75,9 @@ dependencies {
     // Compose dependencies
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
     implementation("androidx.compose.material:material-icons-extended:1.5.4")
+
     // https://mvnrepository.com/artifact/com.google.maps.android/maps-compose
     implementation("com.google.maps.android:maps-compose:4.2.0")
-
 
     // Google Maps
     implementation("com.google.android.gms:play-services-maps:18.2.0")
