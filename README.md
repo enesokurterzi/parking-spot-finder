@@ -10,6 +10,16 @@ You can add different map styles which is already included in the code but conve
 | Pages in the app |
 | --------- |
 |  Map Screen     |
+
+## Prerequisites
+
+1. Get an  API Key at [https://developers.google.com/maps/documentation/javascript/get-api-key]
+
+2. Enter your API in `local.properties`
+
+```JS
+MAPS_API_KEY='ENTER YOUR API'
+```
   
 ## Libraries And Features
   
