@@ -1,5 +1,6 @@
 package com.example.parkingspotfinder.data.mappers
 
+import androidx.viewbinding.BuildConfig
 import com.example.parkingspotfinder.data.remote.parkingspot.ParkingSpotEntity
 import com.example.parkingspotfinder.domain.local.parkingspot.ParkingSpot
 

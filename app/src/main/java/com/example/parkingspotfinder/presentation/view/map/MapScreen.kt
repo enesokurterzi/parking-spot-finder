@@ -10,9 +10,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
+import com.google.maps.android.compose.CameraPositionState
 import com.google.maps.android.compose.GoogleMap
+import com.google.maps.android.compose.MapProperties
+import com.google.maps.android.compose.MapType
 import com.google.maps.android.compose.MapUiSettings
 import com.google.maps.android.compose.Marker
 import com.google.maps.android.compose.MarkerState
@@ -20,11 +24,13 @@ import com.google.maps.android.compose.MarkerState
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MapScreen(
+    currentPosition: LatLng,
+    cameraState: CameraPositionState,
     viewModel: MapsViewModel = viewModel()
 ) {
     val snackbarHostState = remember { SnackbarHostState() }
     val uiSettings = remember {
-        MapUiSettings(zoomControlsEnabled = true)
+        MapUiSettings(zoomControlsEnabled = true, myLocationButtonEnabled = true)
     }
     Scaffold(
         snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
@@ -46,7 +52,11 @@ fun MapScreen(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(it),
-            properties = viewModel.state.properties,
+            cameraPositionState = cameraState,
+            properties = MapProperties(
+                isMyLocationEnabled = true,
+                isTrafficEnabled = true
+            ),
             uiSettings = uiSettings,
             onMapLongClick = { lanLng ->
                 viewModel.onEvent(MapEvent.OnMapLongClick(lanLng))

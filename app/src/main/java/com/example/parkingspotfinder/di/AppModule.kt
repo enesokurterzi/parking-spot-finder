@@ -6,6 +6,8 @@ import com.example.parkingspotfinder.data.remote.parkingspot.ParkingSpotDao
 import com.example.parkingspotfinder.data.remote.parkingspot.ParkingSpotDatabase
 import com.example.parkingspotfinder.data.repository.ParkingSpotRepositoryImpl
 import com.example.parkingspotfinder.domain.repository.ParkingSpotRepository
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -24,6 +26,12 @@ object AppModule {
             ParkingSpotDatabase::class.java,
             "parking_spots.db"
         ).build().dao
+    }
+
+    @Provides
+    @Singleton
+    fun provideFusedLocationProviderClient(app: Application): FusedLocationProviderClient {
+        return LocationServices.getFusedLocationProviderClient(app)
     }
 
 }
