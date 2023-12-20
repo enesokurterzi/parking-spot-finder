@@ -38,7 +38,7 @@ You can add different map styles which is already included in the code but conve
 
 | Map Screen | Map Screen | Map Screen |
 | ----------- | ---------------- | ---------------- |
-| ![Map Screen](https://github.com/enesokurterzi/parking-spot-finder/assets/113862251/950f3246-653d-476d-8d43-5180c003b05c) | ![Map Screen](https://github.com/enesokurterzi/parking-spot-finder/assets/113862251/0df3f57e-aeb8-43eb-aba2-6a06f0591186) | ![Map Screen](https://github.com/enesokurterzi/parking-spot-finder/assets/113862251/5ea17f02-8dc9-4373-8e5c-8a6d8702cb8b)
+| ![Map Screen](https://github.com/enesokurterzi/parking-spot-finder/assets/113862251/950f3246-653d-476d-8d43-5180c003b05c) | ![Map Screen1](https://github.com/enesokurterzi/parking-spot-finder/assets/113862251/0df3f57e-aeb8-43eb-aba2-6a06f0591186) | ![Map Screen2](https://github.com/enesokurterzi/parking-spot-finder/assets/113862251/5ea17f02-8dc9-4373-8e5c-8a6d8702cb8b)
 
      
      
