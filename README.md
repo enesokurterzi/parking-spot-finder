@@ -9,7 +9,7 @@ You can add different map styles which is already included in the code but conve
   
 | Pages in the app |
 | --------- |
-|  Map     |
+|  Map Screen     |
   
 ## Libraries And Features
   
@@ -21,12 +21,13 @@ You can add different map styles which is already included in the code but conve
     ksp("com.google.dagger:dagger-compiler:2.48") <p>
     
   - Room <p>
-    implementation("androidx.room:room-runtime:2.6.0") <p>
-    ksp("androidx.room:room-compiler:2.6.0") <p>
-    implementation("androidx.room:room-ktx:2.6.0") <p>
+    implementation("androidx.room:room-runtime:2.6.1") <p>
+    ksp("androidx.room:room-compiler:2.6.1") <p>
+    implementation("androidx.room:room-ktx:2.6.1") <p>
    
   - Google Maps <p>
     implementation("com.google.android.gms:play-services-maps:18.2.0") <p>
+    implementation("com.google.android.gms:play-services-location:21.0.1") <p>
 
   - Compose Maps <p>
     implementation("com.google.maps.android:maps-compose:4.2.0") <p>
@@ -35,14 +36,9 @@ You can add different map styles which is already included in the code but conve
 
 ## Images from the Project
 
-<a href="https://github.com/enesokurterzi/parking-spot-finder/assets/113862251/09bc65c3-704d-4b07-85c5-bddf6f0ab34f" target="_blank">
-<img src="https://github.com/enesokurterzi/parking-spot-finder/assets/113862251/09bc65c3-704d-4b07-85c5-bddf6f0ab34f" width="200" style="max-width:100%;"></a>
-   
-<a href="https://github.com/enesokurterzi/parking-spot-finder/assets/113862251/8d3f0ff0-3908-4d3b-9f44-4a2f8c593930" target="_blank">
-<img src="https://github.com/enesokurterzi/parking-spot-finder/assets/113862251/8d3f0ff0-3908-4d3b-9f44-4a2f8c593930" width="200" style="max-width:100%;"></a>
-   
-<a href="https://github.com/enesokurterzi/parking-spot-finder/assets/113862251/aa50efe6-574b-46b5-8ec0-1e4c7b7a2364" target="_blank">
-<img src="https://github.com/enesokurterzi/parking-spot-finder/assets/113862251/aa50efe6-574b-46b5-8ec0-1e4c7b7a2364" width="200" style="max-width:100%;"></a>
+| Map Screen | Map Screen | Map Screen |
+| ----------- | ---------------- | ---------------- |
+| ![Map Screen](https://github.com/enesokurterzi/parking-spot-finder/assets/113862251/950f3246-653d-476d-8d43-5180c003b05c) | ![Map Screen](https://github.com/enesokurterzi/parking-spot-finder/assets/113862251/0df3f57e-aeb8-43eb-aba2-6a06f0591186) | ![Map Screen](https://github.com/enesokurterzi/parking-spot-finder/assets/113862251/5ea17f02-8dc9-4373-8e5c-8a6d8702cb8b)
 
      
      
